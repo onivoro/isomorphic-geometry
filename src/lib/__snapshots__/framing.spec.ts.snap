@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`given width 48 and offset 16, it returns framing info 1`] = `
+Object {
+  "cavityCount": 3,
+  "completeCavityCount": 3,
+  "partialCavity": 0,
+  "verticalStuds": 4,
+}
+`;
+
+exports[`given width 52 and offset 16, it returns framing info 1`] = `
+Object {
+  "cavityCount": 4,
+  "completeCavityCount": 3,
+  "partialCavity": 0.25,
+  "verticalStuds": 5,
+}
+`;
+
+exports[`given width 148 and offset 16, it returns framing info 1`] = `
+Object {
+  "cavityCount": 10,
+  "completeCavityCount": 9,
+  "partialCavity": 0.25,
+  "verticalStuds": 11,
+}
+`;
