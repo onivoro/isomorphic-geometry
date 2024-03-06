@@ -1,32 +1,41 @@
 {
-  "name": "@onivoro/isomorphic-geometry",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "build": "tsc -p tsconfig.json",
-    "release": "rm -rf dist && npm run build && npm version minor && cp package.json dist && cd dist && npm publish --access public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/onivoro/isomorphic-geometry.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/onivoro/isomorphic-geometry/issues"
-  },
-  "homepage": "https://github.com/onivoro/isomorphic-geometry#readme",
-  "devDependencies": {
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8",
-    "@babel/preset-typescript": "^7.15.0",
-    "@types/jest": "^27.0.2",
-    "babel-jest": "^27.3.1",
-    "jest": "^27.3.1",
-    "ts-node": "^10.3.0",
-    "typescript": "^4.4.4"
-  }
+    "name": "@onivoro/isomorphic-geometry",
+    "version": "0.1.3",
+    "repository": {
+        "url": "git+https://github.com/onivoro/isomorphic-geometry.git"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/types/index.d.ts",
+    "files": [
+        "dist/*"
+    ],
+    "scripts": {
+        "onx": "onx",
+        "build": "onx Build",
+        "deploy": "onx Publish",
+        "test": "onx Test",
+        "update": "onx Update"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/types/index.d.ts",
+            "require": "./dist/cjs/index.js",
+            "import": "./dist/esm/index.js",
+            "default": "./dist/esm/lib.js"
+        }
+    },
+    "onx": {
+        "platform": "isomorphic",
+        "module": "esm"
+    },
+    "devDependencies": {
+        "@onivoro/cli": "^0.0.32",
+        "@types/jest": "^29.5.12",
+        "typescript": "^5.3.3"
+    },
+    "engines": {
+        "node": "18.19.1",
+        "npm": "10.2.4"
+    }
 }
