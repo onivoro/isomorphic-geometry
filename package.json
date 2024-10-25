@@ -30,12 +30,12 @@
         "module": "esm"
     },
     "devDependencies": {
-        "@onivoro/cli": "^0.0.32",
-        "@types/jest": "^29.5.12",
-        "typescript": "^5.3.3"
+        "@onivoro/cli": "^22.0.3",
+        "@types/jest": "*",
+        "typescript": "*"
     },
     "engines": {
-        "node": "18.19.1",
-        "npm": "10.2.4"
+        "node": "22.10.0",
+        "npm": "10.9.0"
     }
 }
