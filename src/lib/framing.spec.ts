@@ -4,8 +4,9 @@ test.each([
     [148, 16],
     [48, 16],
     [52, 16],
+    [12 * 24, 16],
 ])("given width %j and offset %j, it returns framing info", (width, offset) => {
-    // arrange - set up stuff u need 4 ur code    
+    // arrange - set up stuff u need 4 ur code
 
     // act - run your code
     const result = framing(width, offset);

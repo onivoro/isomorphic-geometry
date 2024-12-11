@@ -2,27 +2,40 @@
 
 exports[`given width 148 and offset 16, it returns framing info 1`] = `
 {
-  "cavityCount": 10,
-  "completeCavityCount": 9,
-  "partialCavity": 0.25,
-  "verticalStuds": 11,
+  "cavityCount": 9,
+  "cavityWidth": 14.5,
+  "completeCavityCount": 8,
+  "partialCavity": 8,
+  "verticalStuds": 10,
 }
 `;
 
 exports[`given width 48 and offset 16, it returns framing info 1`] = `
 {
   "cavityCount": 3,
-  "completeCavityCount": 3,
-  "partialCavity": 0,
+  "cavityWidth": 14.5,
+  "completeCavityCount": 2,
+  "partialCavity": 13,
   "verticalStuds": 4,
 }
 `;
 
 exports[`given width 52 and offset 16, it returns framing info 1`] = `
 {
-  "cavityCount": 4,
-  "completeCavityCount": 3,
-  "partialCavity": 0.25,
-  "verticalStuds": 5,
+  "cavityCount": 3,
+  "cavityWidth": 14.5,
+  "completeCavityCount": 2,
+  "partialCavity": 17,
+  "verticalStuds": 4,
+}
+`;
+
+exports[`given width 288 and offset 16, it returns framing info 1`] = `
+{
+  "cavityCount": 17,
+  "cavityWidth": 14.5,
+  "completeCavityCount": 16,
+  "partialCavity": 8,
+  "verticalStuds": 18,
 }
 `;
