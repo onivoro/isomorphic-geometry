@@ -5,6 +5,8 @@ test.each([
     [48, 16],
     [52, 16],
     [12 * 24, 16],
+    [12 * 8, 16],
+    [12 * 8, 24],
 ])("given width %j and offset %j, it returns framing info", (width, offset) => {
     // arrange - set up stuff u need 4 ur code
 

@@ -39,3 +39,33 @@ exports[`given width 288 and offset 16, it returns framing info 1`] = `
   "verticalStuds": 18,
 }
 `;
+
+exports[`given width 192 and offset 16, it returns framing info 1`] = `
+{
+  "cavityCount": 11,
+  "cavityWidth": 14.5,
+  "completeCavityCount": 10,
+  "partialCavity": 17,
+  "verticalStuds": 12,
+}
+`;
+
+exports[`given width 96 and offset 16, it returns framing info 1`] = `
+{
+  "cavityCount": 6,
+  "cavityWidth": 14.5,
+  "completeCavityCount": 5,
+  "partialCavity": 8.5,
+  "verticalStuds": 7,
+}
+`;
+
+exports[`given width 96 and offset 24, it returns framing info 1`] = `
+{
+  "cavityCount": 4,
+  "cavityWidth": 22.5,
+  "completeCavityCount": 3,
+  "partialCavity": 19.5,
+  "verticalStuds": 5,
+}
+`;
